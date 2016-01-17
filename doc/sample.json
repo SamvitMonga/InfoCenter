@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "stopTimes": [
+    {
+      "TripId": "131662651",
+      "VehicleId": "",
+      "HeadSign": "7A  Fairview via Connaught",
+      "Name": "7 - Mainline to 7A  Fairview via Connaught",
+      "Minutes": 9,
+      "ArrivalDateTime": "/Date(1453005570000)/"
+    },
+    {
+      "TripId": "131661651",
+      "VehicleId": "",
+      "HeadSign": "7B Fairview via Weber",
+      "Name": "7 - Mainline to 7B Fairview via Weber",
+      "Minutes": 26,
+      "ArrivalDateTime": "/Date(1453006606000)/"
+    }
+  ]
+}

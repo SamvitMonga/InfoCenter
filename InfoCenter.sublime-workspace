@@ -1,0 +1,547 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i_c",
+				"i_ce"
+			],
+			[
+				"clk",
+				"i_clock"
+			],
+			[
+				"else",
+				"else	else"
+			],
+			[
+				"get",
+				"getDistance"
+			],
+			[
+				"heda",
+				"headingOffset"
+			],
+			[
+				"trajec",
+				"trajectoryVector"
+			],
+			[
+				"delta",
+				"deltaX"
+			],
+			[
+				"heading",
+				"headingOffset"
+			],
+			[
+				"pr",
+				"prevCheckPt"
+			],
+			[
+				"ne",
+				"nextPointY"
+			],
+			[
+				"nex",
+				"nextPointX"
+			],
+			[
+				"pre",
+				"prevPointY"
+			],
+			[
+				"preV",
+				"prevPointX"
+			],
+			[
+				"s",
+				"speech"
+			],
+			[
+				"load",
+				"loads"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main.py",
+			"settings":
+			{
+				"buffer_size": 758,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "gi push",
+		"selected_items":
+		[
+			[
+				"gi push",
+				"Git: Push"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"sftp syn",
+				"SFTP: Sync Both Directions…"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"github",
+				"GitHub: Copy Gist URL to Clipboard"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sammonga/Dropbox/Documents/Projects/InfoCenter"
+	],
+	"file_history":
+	[
+		"/D/Dropbox/Documents/Projects/InfoCenter/doc/sample.json",
+		"/C/Users/Sam/Downloads/GTFSDec2015/routes.txt",
+		"/C/Users/Sam/Downloads/GTFSDec2015/shapes.txt",
+		"/C/Users/Sam/Downloads/GTFSDec2015/stop_times.txt",
+		"/C/Users/Sam/Downloads/GTFSDec2015/trips.txt",
+		"/C/Users/Sam/Downloads/GTFSDec2015/agency.txt",
+		"/C/Users/Sam/Downloads/GTFSDec2015/calendar.txt",
+		"/C/Users/Sam/Downloads/GTFSDec2015/calendar_dates.txt",
+		"/C/Users/Sam/Downloads/GTFSDec2015/fare_attributes.txt",
+		"/D/Dropbox/School/4B/ECE 327/Labs/lab1/sftp-config.json",
+		"/C/Users/Sam/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Sam/Documents/Rainmeter/Skins/Monstercat Visualizer/@Resources/variables.ini",
+		"/E/Unsorted Downloads/Adobe Photoshop Lightroom 5.6 Final (64 bit) [ChingLiu]/ChingLiu.Install.Notes.nfo",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/docs/Final2015_Solution.tex",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-Mapping/mappingbres.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q3/mappingbres.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/docs/Final2015_Solution.toc",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q2/Q2B.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q2/Q2A.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q1/Q1B.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 1/Assignment1_Solution.tex",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/docs/Notes.txt",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q1/Q1C.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q1/Q1A.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/docs/Assignment2_Solution.tex",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-Mapping/mapping.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q2/Q2C.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-EKFSLAM/ekf_slam.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 2/Assignment2_2.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-Mapping/inversescanner.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-Mapping/inversescannerbres.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-10-RansacSLAM/ekf_ransac_slam.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-ScanRegistration/scanregistration.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-5-KalmanFilter/kalmanII.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 1/Assignment1_harsh.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-3-DubinsCar/car.m",
+		"/D/Dropbox/School/4A/ME 597/Labs/Lab 2/Localization/src/turtlebot_particle_node.cpp",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-FastSLAM/fast_slam.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-5-KalmanFilter/kalmanIII.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-8-PRM/prm.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q1/getDistance.m",
+		"/D/Dropbox/School/4A/ME 597/Labs/Lab 3/code/connection_helper.h",
+		"/D/Dropbox/Demolition Day/Tutorial 2015/1-spacebot/spacebot.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2013/src/Q1/Q1A.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 1/Assignment1.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q2/bridgeInspection.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-8-PRM/CheckCollision.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-8-PRM/EdgeCollision.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q1/sampling.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2013/src/Q1/Q1B.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q2/inview.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q2/CheckCollision.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-FastSLAM/inview.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-8-PRM/polygonal_world.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-8-PRM/prmII.m",
+		"/D/Dropbox/School/4A/ME 597/Finals/2015/src/Q1/shortestpath.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-8-PRM/Q1A.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 2/getDistance.m",
+		"/D/Dropbox/Documents/Projects/Alfred/main.py",
+		"/D/Dropbox/Documents/Projects/Alfred/ai.py",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 2/docs/Assignment2_Solution.tex",
+		"/E/Unsorted Downloads/Adobe Acrobat XI Pro 11.0.9 Multilanguage [ChingLiu]/ChingLiu.Install.Notes.nfo",
+		"/E/Unsorted Downloads/Adobe Acrobat XI Pro 11.0.9 Multilanguage [ChingLiu]/patch MPT/MAYANPROPHECY.nfo",
+		"/D/Dropbox/Documents/Projects/Alfred/values.json",
+		"/D/Dropbox/Documents/Projects/Alfred/response.json",
+		"/D/Dropbox/Documents/Projects/Alfred/command.json",
+		"/D/Dropbox/Documents/Projects/Bed LEDs/Bluetooth_Control/Bluetooth_Control.ino",
+		"/D/Dropbox/School/4A/ME 597/Labs/lab_three/scripts/bag_to_csv.py",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 2/Assignment2_1.m",
+		"/D/Dropbox/School/4A/ECE 484/Lab 3/init.m",
+		"/D/Dropbox/School/4A/ECE 484/Lab 2/PartG.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 2/Assignment2.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-7-NonlinearSteering/cartraj.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-7-Trajectories/robottraj.m",
+		"/D/Dropbox/School/4A/ME597 - Labs/Lab 2/Localization/scripts/exportFigs.m",
+		"/D/Dropbox/School/4A/ME597 - Labs/Lab 2/Localization/src/turtlebot_particle_node.cpp",
+		"/D/Dropbox/School/4A/ME597 - Labs/Lab 2/Localization/results/50Particles/exportFigs.m",
+		"/D/Dropbox/Documents/Projects/3D Printer/Repetier-Firmware for Replikeo i3/Repetier-Firmware/README.txt",
+		"/D/Dropbox/School/4A/ME597 - Labs/Lab 2/Localization/bag_to_csv.py",
+		"/D/Dropbox/School/4A/ME597 - Labs/Lab 2/Localization/bag.m",
+		"/D/Dropbox/School/4A/ECE 484 - Labs/Lab 2/C2DScript.m",
+		"/D/Dropbox/School/4A/ECE 484 - Labs/Lab 2/lab2.m",
+		"/D/Dropbox/School/4A/ECE 484 - Labs/Lab 2/PartG.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-5-ExtendedKalmanFilter/ekf.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-5-KalmanFilter/kalmanI.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/Assignment 1/drawbot.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-3-TwoWheelMotion/robotmotion.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-5-Ellipse/ellipse.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-EKFLocalization/ekf_localization_new.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-6-EKFLocalization/closestfeature.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-3-Walking/walking.m",
+		"/D/Dropbox/School/4A/ME 597/Assignments/ME597-Code/ME597-3-DubinsCar/drawcar.m",
+		"/C/Users/Sam/AppData/Roaming/Sublime Text 3/Packages/User/MATLAB.sublime-build",
+		"/D/Test.ahk",
+		"/C/Users/Sam/AppData/Roaming/SumatraPDF/SumatraPDF-settings.txt",
+		"/C/Windows/Logs/CBS/CBS.log",
+		"/D/Games/Unreal Tournament 2004/System/ut2004.ini",
+		"/C/Users/Sam/SW2015_SP4.0_Full_SSQ/SolidSQUAD.nfo",
+		"/C/Users/Sam/SW2015_SP4.0_Full_SSQ/_SolidSQUAD_/readme.txt",
+		"/C/Users/Sam/Documents/MarbleMouse.ahk",
+		"/D/Master.txt",
+		"/D/combined.txt",
+		"/D/Larger.txt",
+		"/E/Go Pro [RAW]/Master.txt",
+		"/C/Users/Sam/AppData/Roaming/Sublime Text 3/Packages/SideBarGit/SideBarGit.sublime-settings",
+		"/C/Users/Sam/AppData/Roaming/Sublime Text 3/Packages/User/SideBarGit.sublime-settings",
+		"/D/Dropbox/Documents/Projects/Alfred/files.json",
+		"/D/Dropbox/Documents/Projects/TYDP/quadcopter.py",
+		"/D/Dropbox/Documents/Projects/Alfred/test_files/TTSTest.py",
+		"/D/Dropbox/Documents/Projects/Alfred/test_files/responseTest.py",
+		"/D/Dropbox/Documents/Projects/Alfred/dictionary.py",
+		"/D/Dropbox/Documents/Projects/Alfred/dictionary.json",
+		"/D/Dropbox/Documents/Projects/Alfred/test_files/WavTest.py",
+		"/D/Dropbox/Documents/Projects/Alfred/test_files/MicrophoneTest.py",
+		"/D/Dropbox/Jasmine/Docs/Questions.txt",
+		"/D/Dropbox/Documents/School/3B/MTE360/Lab 2/Prelab 2/code_1g.m",
+		"/C/Users/Sam/Downloads/code_1g (1).m",
+		"/D/Dropbox/Documents/Projects/Alfred/test_files/MicTest.py",
+		"/D/Dropbox/GoonSquad/Kishan Print/Print Tally.txt",
+		"/D/Dropbox/Documents/Projects/Alfred/TTSTest.py",
+		"/D/Dropbox/Documents/Projects/Alfred/HelloWorld.py",
+		"/D/Dropbox/Documents/Projects/Google Interview Prep/ClockHandAngle.py",
+		"/C/Users/Sam/Sublime Text  3 Build 3065/Sublime Text  3 Build 3065 key.txt"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Main",
+			"Columbia",
+			"was",
+			"we",
+			"eps",
+			"Gaussian",
+			"newfeature",
+			"y",
+			"M",
+			"flist",
+			"newfeat",
+			"errRadius",
+			"laundry",
+			"legend",
+			"dot",
+			"array",
+			"circ",
+			"array",
+			"\\documentclass{article}\n\\usepackage{amsmath}\n\\usepackage{graphicx}\n\\usepackage{gensymb}\n\n\\addtolength{\\oddsidemargin}{-.875in}\n\\addtolength{\\evensidemargin}{-.875in}\n\\addtolength{\\textwidth}{1.75in}\n\n\\addtolength{\\topmargin}{-.875in}\n\\addtolength{\\textheight}{1.75in}\n\n\\title{ME597 - Assignment 2}\n\\author{Sam Monga, Harsh Bhatt}\n\\begin{document}\n\n\\maketitle{}\n\n\\newpage\n\\section{Ackermann Robot Motion Model}\nThe motion of a bicycle is modelled in this assignment. The bicycle, dimensions and axes are shown in Figure \\ref{fig:bicycle}. This configuration uses the Ackermann steering principle. \nAs in most bicycles, the steering is limited to $\\pm$30$^{\\circ}$\n\n\\begin{figure}[h]\n    \\centering\n    \\includegraphics[width=0.6\\textwidth]{../images/overallMotionModel.png}\n    \\caption{Instantaneous Center of Rotation and Heading}\n    \\label{fig:bicycle}\n\\end{figure}\n\nThe vehicle state is defined as:\n\\[\n    x_t = \\begin{bmatrix}x_{1} \\\\ x_{2} \\\\ x_{3} \\end{bmatrix}\n      = \\begin{bmatrix}x \\\\ y \\\\ \\theta \\end{bmatrix}\n\\]\n\nThe front wheel state can be defined and related to the back wheel as:\n\\[\n    x_{f,t} = \\begin{bmatrix}x_{f,1} \\\\ x_{f,2} \\end{bmatrix}\n      = \\begin{bmatrix}x_f \\\\ y_f \\end{bmatrix}\n\\]\n\nThe vehicle inputs are defined as:\n\\[\n    u = \\begin{bmatrix}u_{t,1} \\\\ u_{t,2} \\end{bmatrix}\n      = \\begin{bmatrix}v \\\\ \\delta \\end{bmatrix}\n\\]\n\n\\newpage\nThe relationship between the steering angle and current heading can be derived from the Instantaneous Center of Rotation (ICR). This can be seen in Figure \\ref{fig:ICR}.\n\n\\begin{figure}[h]\n    \\centering\n    \\includegraphics[width=0.6\\textwidth]{../images/ICR.png}\n    \\caption{Instantaneous Center of Rotation and Heading}\n    \\label{fig:ICR}\n\\end{figure}\n\n\nFrom Figure \\ref{fig:ICR}, it can be seen that\n\n\\begin{align}\n    \\omega = \\frac{v}{R} \\\\\n    \\tan(\\delta) = \\frac{L}{R}\n\\end{align}\n\nSubbing (1) into (2),\n\\[\n	\\omega = \\frac{v}{R} = \\frac{v\\tan(\\delta)}{L} = \\dot{\\theta}\n\\]\n\nFrom this, the difference equation for $\\theta_t$ can be derived:\n\\[\n	\\theta = \\theta_{t-1} + \\frac{v_t\\tan(\\delta_t)}{L}dt\n\\]\n\nGaussian disturbances of 0.02 m in position (x,y) and 1^${\\circ}$ results in the following covariance matrix\n\nThe complete motion model\n% This can be seen in Figure \\ref{fig:robotVelocity}:\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.5\\textwidth]{figures/img1.png}\n%     \\caption{Robot velocity contribution from Swedish wheels}\n%     \\label{fig:robotVelocity}\n% \\end{figure}\n\n% Each velocity can be seen as a vector on the cartesian plane, seen in Figure \\ref{fig:robotVelVectors}\n\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.5\\textwidth]{figures/img2.png}\n%     \\caption{Simplified robot velocity vectors}\n%     \\label{fig:robotVelVectors}\n% \\end{figure}\n\n% First, the velocities must be broken into x and y components, in the local frame:\n% \\[\n%     \\begin{bmatrix}\\dot{x} \\\\ \\dot{y} \\end{bmatrix}\n%       = \\begin{bmatrix}\n%             v_{2}\\cdot\\cos(\\frac{7\\pi}{6})+v_{3}\\cdot\\cos(\\frac{11\\pi}{6})\\\\\n%             v_{1}+v_{2}\\cdot\\sin(\\frac{7\\pi}{6})+v_{3}\\cdot\\sin(\\frac{11\\pi}{6})\\\\\n%         \\end{bmatrix}\n% \\]\n\n% Applying a rotation of theta to the local frame yields new velocities in the global frame. This can be seen in Figure \\ref{fig:rotatedVelocities}\n\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.4\\textwidth]{figures/img3.png}\n%     \\caption{Rotated robot velocities}\n%     \\label{fig:rotatedVelocities}\n% \\end{figure}\n\n% This transformation can be modelled as:\n% \\[\n%     \\begin{bmatrix}\\dot{x} \\\\ \\dot{y} \\\\ \\dot{\\theta} \\end{bmatrix}\n%       = \\begin{bmatrix}\n%             v_{1}\\cdot\\cos(\\frac{pi}{2}+\\theta) + v_{2}\\cdot\\cos(\\frac{7\\pi}{6}+\\theta)+v_{3}\\cdot\\cos(\\frac{11\\pi}{6}+\\theta)\\\\\n%             v_{1}\\cdot\\sin(\\frac{pi}{2}+\\theta) + v_{2}\\cdot\\sin(\\frac{7\\pi}{6}+\\theta)+v_{3}\\cdot\\sin(\\frac{11\\pi}{6}+\\theta)\\\\\n%             \\frac{v_{1}}{l} + \\frac{v_{2}}{l} + \\frac{v_{3}}{l}\n%         \\end{bmatrix}\n% \\]\n\n% Gaussian disturbance is added as the following:\n\n% \\[\n%     \\epsilon_{t} = \\hat{N}(0,R),\n%     R = \\begin{bmatrix}0.0001 & 0 & 0 \\\\0 & 0.0001 & 0 \\\\ 0 & 0 &  0.01\\end{bmatrix}\n% \\]\n\n% Subbing in the state and velocity vectors as well as adding the disturbance, yields the full expanded motion model:\n% \\[\n%     x = \\begin{bmatrix}x_{1,t} \\\\ x_{2,t} \\\\ x_{3,t} \\end{bmatrix}\n% \\]\n% \\[\n%       = \\begin{bmatrix}\n%             x_{1,t-1} + r\\cdot dt\\cdot[\\cos(\\frac{\\pi}{2} + x_{3,t-1})u_{1,t} + \\cos(\\frac{7\\pi}{6} + x_{3,t-1})u_{2,t} + \\cos(\\frac{11\\pi}{6} + x_{3,t-1})u_{3,t}]\\\\\n%             x_{2,t-1} + r\\cdot dt\\cdot[\\sin(\\frac{\\pi}{2} + x_{3,t-1})u_{1,t} + \\sin(\\frac{7\\pi}{6} + x_{3,t-1})u_{2,t} + \\sin(\\frac{11\\pi}{6} + x_{3,t-1})u_{3,t}]\\\\\n%             x_{3,t-1} + r\\cdot dt\\cdot[\\frac{1}{l}u_{1,t} + \\frac{1}{l}u_{2,t} + \\frac{1}{l}u_{3,t}]\n%         \\end{bmatrix}\n%        + \\epsilon_{t}\n% \\]\n\n% Where r = 0.25m, l = 0.30m\n\n% \\newpage\n% The complete motion model was tested with the following input:\n% \\[\n%     \\begin{bmatrix}\n%         \\omega_{1} \\\\ \\omega_{2} \\\\ \\omega_{3}\n%     \\end{bmatrix}\n%     =\n%     \\begin{bmatrix}\n%         -1.5 \\\\ 2.0 \\\\ 1.0\n%     \\end{bmatrix}\n% \\]\n\n% The trajectory of the robot is shown in Figure \\ref{fig:givenInputs}\n\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.9\\textwidth]{figures/GivenInputs.png}\n%     \\caption{Robot trajectory with test input}\n%     \\label{fig:givenInputs}\n% \\end{figure}\n\n% \\newpage\n% To determine input angular velocities which move the robot in a 2 m diameter\n% circle, two of the three input velocities were set to 1.0 rad/s. For simplicity, a\n% synchronized orbit was chosen. This means the angular velocity of the robot\n% along its center axis ($\\omega_r$) is the same as the angular velocity at the instant\n% centre of rotation ($\\omega_c$).\n\n% The following relationships were used to determine the third input velocity:\n% \\begin{align}\n%     \\vec{V_r} = \\sqrt{V_x^2 + V_y^2} \\\\\n%     \\omega_{r} = \\omega_{c} = \\frac{|\\vec{V_r}|}{r_c}\n% \\end{align}\n% where $\\vec{V_r}$ is the velocity of the robot and $r_c$ is the radius of rotation (1 m in this case)\n\n% The circular trajectory can be seen in Figure \\ref{fig:circleInput}\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.9\\textwidth]{figures/Radius1Circle.png}\n%     \\caption{Robot moving in a 2 m diameter circle}\n%     \\label{fig:circleInput}\n% \\end{figure}\n\n% \\newpage\n% A growing spiral trajectory seen in Figure \\ref{fig:cinnabun} was achieved by using the following input\n% \\[\n%     \\begin{bmatrix}\n%         \\omega_{1} \\\\ \\omega_{2} \\\\ \\omega_{3}\n%     \\end{bmatrix}\n%     =\n%     \\begin{bmatrix}\n%         1.0 \\\\ -1.0 \\\\ 1.0\n%     \\end{bmatrix}\n%     + \\frac{dt}{20}\n%     \\begin{bmatrix}\n%         0 \\\\ -t \\\\ t\n%     \\end{bmatrix}\n% \\]\n% where t is the elapsed time and dt is the discrete time period\n\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.9\\textwidth]{figures/Cinnabun.png}\n%     \\caption{Robot moving in a growing spiral}\n%     \\label{fig:cinnabun}\n% \\end{figure}\n\n% \\newpage\n% \\section{Measurement Model}\n% The GPS provides measurements in the x and y axes and the magnetometer provides measurement in the $\\theta$ axis.\n% The measurement model is defined as follows:\n% \\[ y_{t} = Cx_{t} + Du_{t} + \\delta_{t}, \\delta \\sim N(0, Q_{t} \\]\n% Where\n% \\[ C = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\]\n% \\[ D = 0 \\]\n% \\[ Q_{t} = \\begin{bmatrix} 0.25 & 0 & 0 \\\\ 0 & 0.25 & 0 \\\\ 0 & 0 & 0.03 \\end{bmatrix} \\]\n% $Q_{t}$ is defined using the squares of the standard deviations: $0.5m^2 = 0.25m$ and $10\\,^{\\circ}$ in radians (0.174533) squared, 0.03.\n\n% The measurement model does not depend on the inputs, thus $D = [0]$ however, an additional term is added to correct for true north ($9.7\\,^{\\circ} = 0.169297$rad). Yielding a final measurement model:\n% \\[ y_{t} = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}x_{t}\n%          + \\delta_{t}\n%          + \\begin{bmatrix} 0 \\\\ 0 \\\\ 0.17 \\end{bmatrix}\n% \\]\n\n% \\newpage\n% \\section{Extended Kalman Filter}\n\n% Due to the non-linearities in the motion model, an Extended Kalman Filter was used.\n% The non-linear motion model is the following 3 x 1 matrix:\n\n% \\renewcommand{\\arraystretch}{1.5}\n% \\[\n%     g(x_{t}) =\n%         \\begin{bmatrix}\n%             x_{1,t-1} + r\\cdot dt\\cdot[\\cos(\\frac{\\pi}{2} + x_{3,t-1})u_{1,t} + \\cos(\\frac{7\\pi}{6} + x_{3,t-1})u_{2,t} + \\cos(\\frac{11\\pi}{6} + x_{3,t-1})u_{3,t}]\\\\\n%             x_{2,t-1} + r\\cdot dt\\cdot[\\sin(\\frac{\\pi}{2} + x_{3,t-1})u_{1,t} + \\sin(\\frac{7\\pi}{6} + x_{3,t-1})u_{2,t} + \\sin(\\frac{11\\pi}{6} + x_{3,t-1})u_{3,t}]\\\\\n%             x_{3,t-1} + r\\cdot dt\\cdot[\\frac{1}{l}u_{1,t} + \\frac{1}{l}u_{2,t} + \\frac{1}{l}u_{3,t}]\n%         \\end{bmatrix}\n% \\]\n\n% To linearize the motion model, the Jacobian of $G_t$ was found by using the following MATLAB command\n% \\begin{verbatim}\n%     >> jacobian(g, x)\n% \\end{verbatim}\n\n% and the resulting Jacobian matrix, $G_t$ is given by\n% \\[\n%     G_t = \\frac{\\partial}{\\partial t} g(x_{t-1},u_t)\\Bigr|_{x_{t-1} = \\mu_{t-1}}\n% \\]\n\n% The measurement model is already linear. Therefore no linearization is required.\n% \\[\n%     H_t = C_t = I\n% \\]\n\n% A plot of the robot's trajectory is shown in Figure \\ref{fig:totalPose}\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.8\\textwidth]{figures/TotalPose.png}\n%     \\caption{Robot pose with EKF}\n%     \\label{fig:totalPose}\n% \\end{figure}\n\n% \\newpage\n% The x state and the EKF estimate is shown in Figure \\ref{fig:xPose}\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.6\\textwidth]{figures/XPose.png}\n%     \\caption{X position with EKF}\n%     \\label{fig:xPose}\n% \\end{figure}\n\n% The y state and the EKF estimate is shown in Figure \\ref{fig:yPose}\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.6\\textwidth]{figures/YPose.png}\n%     \\caption{Y position with EKF}\n%     \\label{fig:yPose}\n% \\end{figure}\n\n% \\newpage\n% The heading state ($\\theta$) and the EKF estimate is shown in Figure \\ref{fig:thetaPose}\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.6\\textwidth]{figures/ThetaPose.png}\n%     \\caption{Heading with EKF}\n%     \\label{fig:thetaPose}\n% \\end{figure}\n\n% \\newpage\n% Finally, a 1Hz GPS accuracy update was implemented. The updated results are shown below\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.6\\textwidth]{figures/TotalPoseCorrected.png}\n%     \\caption{Trajectory of robot with EKF and GPS correction}\n%     \\label{fig:totalPoseCorrected}\n% \\end{figure}\n\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.6\\textwidth]{figures/XPoseCorrected.png}\n%     \\caption{X position of robot with EKF and GPS correction}\n%     \\label{fig:xPoseCorrected}\n% \\end{figure}\n\n% \\newpage\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.6\\textwidth]{figures/YPoseCorrected.png}\n%     \\caption{Y position of robot with EKF and GPS correction}\n%     \\label{fig:yPoseCorrected}\n% \\end{figure}\n\n% \\begin{figure}[h]\n%     \\centering\n%     \\includegraphics[width=0.6\\textwidth]{figures/ThetaPose.png}\n%     \\caption{Heading of robot with EKF and GPS correction}\n%     \\label{fig:thetaPoseCorrected}\n% \\end{figure}\n\n% \\newpage\n% \\subsection{Appendix - Code}\n% \\begin{verbatim}\n% %Assignment1.m\n% close all;\n% clear all;\n% clc;\n\n% syms x1 x2 x3 u1 u2 u3\n\n% % Wheel radius\n% r = 0.25;\n\n% % Distance from wheel to center\n% l = 0.3;\n\n% % Time\n% duration = 15; % duration of simulation (s)\n% dt = 1/10; % discrete time step\n% n = 0:dt:duration; % time index vector\n\n% % Model Noise/Disturbance\n% posDeviation = 0.01; % disturbance in position (m)\n% angleDeviation = 0.1*(pi/180); % disturbance in heading (rads)\n\n% % Measurement Noise/Disturbance\n% GPSNoise = 0.5; % deviation in GPS X reading (m)\n% lowGPSNoise = 0.01; % low deviation in GPS (m)\n% magNoise = 10*(pi/180); % deviation in magnetometer (rads)\n\n% % Angular speeds to test\n% u1 = -1.5;\n% u2 = 2.0;\n% u3 = 1.0;\n\n% % Angular speeds for circle\n% % u1 = -1.3076924;\n% % u2 = 1.0;\n% % u3 = 1.0;\n\n% % Initial anuglar speeds for spiral\n% % u1 = 1.0;\n% % u2 = -1.0;\n% % u3 = 1.0;\n\n% % Change in angular speeds per iteration\n% u = [u1 u2 u3]';\n\n% % Motion Model\n% % A = [1    0   0;\n% %      0    1   0;\n% %      0    0   1];\n\n% % B = [r*sin(pi + theta)    r*sin((5/3)*pi + theta)      r*sin((1/3)*pi + theta);\n% %      r*cos(pi + theta)    r*cos((5/3)*pi + theta)      r*cos((1/3)*pi + theta);\n% %      r/l                  r/l                          r/l                     ];\n\n\n% g = [x1 + r*cos((1/2)*pi + x3)*u1*dt + r*cos((7/6)*pi + x3)*u2*dt + r*cos((11/6)*pi + x3)*u3*dt ;\n%      x2 + r*sin((1/2)*pi + x3)*u1*dt + r*sin((7/6)*pi + x3)*u2*dt + r*sin((11/6)*pi + x3)*u3*dt ;\n%      x3 +       (r/l)*u1*dt          +      (r/l)*u2*dt           +         (r/l)*u3*dt         ];\n\n% G = jacobian(g, [x1 x2 x3]);\n\n% R = [posDeviation^2      0                   0               ;\n%       0                  posDeviation^2      0               ;\n%       0                  0                   angleDeviation^2];\n\n% [RE, Re] = eig(R);\n\n% % Measurement Model\n% C = 1*eye(3);\n% D = zeros(3,3);\n\n% Qb = [ GPSNoise^2    0                0             ;\n%        0             GPSNoise^2       0             ;\n%        0             0                magNoise^2    ];\n\n% Qc = [ lowGPSNoise^2 0                0             ;\n%        0             lowGPSNoise^2    0             ;\n%        0             0                magNoise^2    ];\n\n\n% QOffset = [0 0 9.7*(pi/180)]';\n\n% % Simulation initialization\n% x = [x1 x2 x3]';\n% x_S = zeros(3,length(n));\n\n% y_S = zeros(3,length(n));\n\n% mup_S = zeros(3, length(n));\n% mu_S = zeros(3, length(n));\n\n% Sp = 1*eye(3);\n% S = 1*eye(3); % covariance (Sigma)\n\n% for t = 2:length(n)\n%     % GPS corrections\n%     if mod(t,10)\n%         [QE, Qe] = eig(Qb);\n%         Q = Qb;\n%     else\n%         [QE, Qe] = eig(Qc);\n%         Q = Qc;\n%     end\n\n%     % Comment to enable GPS corrections at 1Hz\n%     %[QE, Qe] = eig(Qb);\n%     %Q = Qb;\n\n%     e = RE*sqrt(Re)*randn(3,1);\n\n%     % Spiral\n%     % x_S(:,t) = double(subs(g, [x' u'], [x_S(:,t-1)' [u1 u2-t/20 u3+t/20]]) + e);\n\n%     x_S(:,t) = double(subs(g, [x' u'], [x_S(:,t-1)' u']) + e);\n\n%     d = QE*sqrt(Qe)*randn(3,1) + QOffset;\n%     y_S(:,t) = C*x_S(:,t) + D*(u) + d;\n\n%     Gt = double(subs(G, [x' u'], [mu_S(:,t-1)' u']));\n%     mup_S(:,t) = double(subs(g, [x' u'], [mu_S(:,t-1)' u']));\n%     Sp = Gt*S*Gt' + R;\n\n%     K_S(:,:,t) = (Sp*C')*inv(C*Sp*C' + Q);\n%     mu_S(:,t) = mup_S(:,t) + K_S(:,:,t)*(y_S(:,t) - C*mup_S(:,t) + D*u);\n%     S = (eye(3) - K_S(:,:,t)*C)*Sp;\n\n%     fig = figure(1);\n%     clf;hold on;\n\n%     plot(x_S(1,1:t),x_S(2,1:t), 'r--')\n%     plot(y_S(1,1:t), y_S(2,1:t), 'Color', [0.8 0.8 0.8])\n%     plot(mu_S(1,1:t),mu_S(2,1:t), 'b')\n\n%     mu_pos = [mu_S(1,t) mu_S(2,t)];\n%     S_pos = [S(1,1) S(1,3); S(3,1) S(3,3)];\n\n%     error_ellipse(S_pos,mu_pos,0.75);\n%     error_ellipse(S_pos,mu_pos,0.95);\n\n%     title('Motion of Swedish wheel robot with EKF')\n%     axis equal\n%     axis([-1.5 1.5 -1.5 1.5])\n%     legend('True motion','Measurement','EKF Estimate')\n%     xlabel('x (m)');\n%     ylabel('y (m)');\n\n% end\n% \\end{verbatim}\n\\end{document}",
+			"following relationship",
+			"section",
+			"fig",
+			"xfront_S",
+			"x_S",
+			"u(1)",
+			"realFileName",
+			"real_data",
+			"data",
+			"n",
+			"inverse",
+			"failed",
+			"RenderDevice",
+			"phraseType"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								493,
+								493
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 175.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 318.0
+	},
+	"output.sftp":
+	{
+		"height": 284.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "InfoCenter.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
