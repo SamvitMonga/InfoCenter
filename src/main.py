@@ -10,8 +10,8 @@ import logging
 import pprint
 
 realTimeUrl = "http://realtimemap.grt.ca/Stop/GetStopInfo?stopId={stopID}&routeId={routeID}"
-busUpdateFreq = 10000
-weatherUpdateFreq = 60000
+busUpdateFreq = 60000
+weatherUpdateFreq = 120000
 
 schoolStop = '1123'   # 2514 for Columbia/Lester, 1123 for UW-DC (testing purposes)
 schoolBus = ['200','9']  # 7 for Columbia/Lester, [200, 9] for UW-DC (testing purposes)
@@ -40,9 +40,12 @@ class MainWindow(QMainWindow):
 
     def createWidgets(self):
         bigFont = QFont("Calibri", 36, QFont.Bold)
+        self.minFont = QFont("Calibri", 24)
+        self.nameFont = QFont("Calibri", 24)
+
         self.tempLabel = QLabel(time.ctime(), self)
         self.tempLabel.setAlignment(Qt.AlignCenter)
-        self.tempLabel.resize(self.width(), 50)
+        self.tempLabel.resize(self.width(), 100)
         self.tempLabel.setFont(bigFont)
 
         self.statusLabel = QLabel('Last Updated: {0}'.format(time.ctime()), self)
@@ -50,31 +53,12 @@ class MainWindow(QMainWindow):
         self.statusLabel.resize(self.width(), 10)
 
         # Bus timing layout
-        # Top destination labels
         
-        # School label
-        schLabel = QLabel("School", self)
-        schLabel.setAlignment(Qt.AlignCenter)
-        pixMap = QPixmap('../res/school.png')
-        schoolPixmap = pixMap.scaled(64,64, Qt.KeepAspectRatio)
-        schLabel.setPixmap(schoolPixmap)
+        # Top labels
+        schLabel = self.createImgLabel('School', '../res/school.png')
+        gymLabel = self.createImgLabel('Gym', '../res/gym.png')
+        dtnLabel = self.createImgLabel('Downtown', '../res/downtown.png')
 
-        # Gym label
-        gymLabel = QLabel("Gym", self)
-        gymLabel.setAlignment(Qt.AlignCenter)
-        pixMap = QPixmap('../res/gym.png')
-        gymPixmap = pixMap.scaled(64,64, Qt.KeepAspectRatio)
-        gymLabel.setPixmap(gymPixmap)
-
-        # Downtown label
-        downtownLabel = QLabel("Downtown", self)
-        downtownLabel.setAlignment(Qt.AlignCenter)
-        pixMap = QPixmap('../res/downtown.png')
-        dtnPixmap = pixMap.scaled(64,64, Qt.KeepAspectRatio)
-        downtownLabel.setPixmap(dtnPixmap)
-
-        # Test bus label (under school)
-        # self.busLbl = QLabel(str(schoolTimes[0][0]) +  " minutes for " + str(schoolTimes[0][1]), self)
         # --------------------------------------------
         
         schBusLayout = QVBoxLayout()
@@ -88,10 +72,9 @@ class MainWindow(QMainWindow):
 
         gymBusLayout = QVBoxLayout()
         self.gymTable = QTableWidget()
-        
-        self.gymTable = self.createTable()
 
         gymBusLayout.addWidget(gymLabel)
+        self.gymTable = self.createTable()
         gymBusLayout.addWidget(self.gymTable)
 
         # --------------------------------------------
@@ -99,9 +82,8 @@ class MainWindow(QMainWindow):
         dtnBusLayout = QVBoxLayout()
         self.dtnTable = QTableWidget()
 
+        dtnBusLayout.addWidget(dtnLabel)
         self.dtnTable = self.createTable()
-
-        dtnBusLayout.addWidget(downtownLabel)
         dtnBusLayout.addWidget(self.dtnTable)
 
         # --------------------------------------------
@@ -116,24 +98,61 @@ class MainWindow(QMainWindow):
         mainLayout.addLayout(destLayout)
         mainLayout.addWidget(self.statusLabel)
 
-        # self.tempLabel = QLabel(time.ctime(), self)        
-
         centralWidget = QWidget()
         centralWidget.setLayout(mainLayout)
         self.setCentralWidget(centralWidget)
+    
+    def createTable(self):
+        table = QTableWidget(5, 2)
+        table.verticalHeader().setVisible(False)
+        table.horizontalHeader().setVisible(False)
+        table.horizontalHeader().setStretchLastSection(True)
+        table.setShowGrid(False)
+        for row in range(0, 5):
+            table.setItem(row, 0, QTableWidgetItem("Time"))
+            table.setItem(row, 1, QTableWidgetItem("Name"))
+        return table
+
+    def createTableItem(self, name, font):
+        item = QTableWidgetItem(name)
+        item.setFont(font)
+        item.setTextAlignment(Qt.AlignVCenter)
+        # item.setTextAlignment(Qt.AlignHCenter)
+        item.setFlags(Qt.ItemIsEnabled)
+        return item
+
+    def updateTable(self, table, times):
+        table.clearContents()
+
+        for row in range (0, len(times)):
+            minutes = self.createTableItem(str(times[row][0]) + ' min', self.minFont)
+            name = self.createTableItem(str(times[row][1]), self.nameFont)
+
+            table.setItem(row, 0, minutes)
+            table.setItem(row, 1, name)
+
+    def createImgLabel(self, label, path):
+        imgLabel = QLabel(label, self)
+        imgLabel.setAlignment(Qt.AlignCenter)
+        pixMap = QPixmap(path)
+        scaledPixmap = pixMap.scaled(64,64, Qt.KeepAspectRatio)
+        imgLabel.setPixmap(scaledPixmap)
+        return imgLabel
 
     def updateBus(self):
         try:
             logging.info('%s : Updating bus data', time.ctime())
-            # fetchTimes()
-            # self.schTable.clearContents()
-            # update contents
+            fetchTimes()
+            self.updateTable(self.schTable, schoolTimes)
+            self.updateTable(self.gymTable, gymTimes)
+            self.updateTable(self.dtnTable, downtownTimes)
+            
             timeStr = time.strftime('%I:%M %p', time.localtime())
             self.statusLabel.setText('Last updated at {0}'.format(timeStr))
 
         finally:
             QTimer.singleShot(busUpdateFreq,self.updateBus)
-   
+
     def updateWeather(self):
         try:
             logging.info('%s : Updating weather', time.ctime())
@@ -144,18 +163,6 @@ class MainWindow(QMainWindow):
         finally:
             QTimer.singleShot(weatherUpdateFreq, self.updateWeather)
 
-    def createTable(self):
-        table = QTableWidget(5, 2)
-        
-        table.verticalHeader().setVisible(False)
-        table.horizontalHeader().setVisible(False)
-        table.horizontalHeader().setStretchLastSection(True)
-        for row in range(0, 5):
-            table.setItem(row, 0, QTableWidgetItem("Time"))
-            table.setItem(row, 1, QTableWidgetItem("Name"))
-        return table
-
-
 # def fetchWeather():
 def getKey(item):
     return item[1]
@@ -164,9 +171,6 @@ def clearTimes():
     global schoolData
     global gymData
     global downtownData
-    global schoolTimes
-    global gymTimes
-    global downtownTimes
 
     schoolData = {
         'status':'success',
@@ -219,7 +223,7 @@ def fetchTimes():
 
     buses = gymData['stopTimes']
     for bus in buses:
-        tupl = (bus['HeadSign'], bus['Minutes'])
+        tupl = (bus['Minutes'], bus['HeadSign'])
         gymTimes.append(tupl)
     gymTimes = sorted(gymTimes, key = getKey)
 
@@ -233,7 +237,7 @@ def fetchTimes():
 
     buses = downtownData['stopTimes']
     for bus in buses:
-        tupl = (bus['HeadSign'], bus['Minutes'])
+        tupl = (bus['Minutes'], bus['HeadSign'])
         downtownTimes.append(tupl)
     downtownTimes = sorted(downtownTimes, key = getKey)
 
