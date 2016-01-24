@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"gym",
+				"gymTimes"
+			],
+			[
+				"downtown",
+				"downtownTimes"
+			],
+			[
 				"i_c",
 				"i_ce"
 			],
@@ -71,8 +79,25 @@
 			"file": "src/main.py",
 			"settings":
 			{
-				"buffer_size": 758,
+				"buffer_size": 5564,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{\n  \"status\": \"success\",\n  \"stopTimes\": [\n    {\n      \"TripId\": \"131762563\",\n      \"VehicleId\": \"21003\",\n      \"HeadSign\": \"200 iXpress Ainslie Terminal\",\n      \"Name\": \"200 - Ixpress to 200 iXpress Ainslie Terminal\",\n      \"Minutes\": 6,\n      \"ArrivalDateTime\": \"/Date(1453051900000)/\"\n    },\n    {\n      \"TripId\": \"131762663\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"200 iXpress Ainslie Terminal\",\n      \"Name\": \"200 - Ixpress to 200 iXpress Ainslie Terminal\",\n      \"Minutes\": 33,\n      \"ArrivalDateTime\": \"/Date(1453053480000)/\"\n    },\n    {\n      \"TripId\": \"131762763\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"200 iXpress Ainslie Terminal\",\n      \"Name\": \"200 - Ixpress to 200 iXpress Ainslie Terminal\",\n      \"Minutes\": 63,\n      \"ArrivalDateTime\": \"/Date(1453055280000)/\"\n    }\n  ]\n}",
+			"settings":
+			{
+				"buffer_size": 794,
+				"line_ending": "Unix",
+				"name": "{"
+			}
+		},
+		{
+			"contents": "{\n  \"status\": \"success\",\n  \"stopTimes\": [\n    {\n      \"TripId\": \"131772963\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"9 Lakeshore to Conestoga Mall\",\n      \"Name\": \"9 - Lakeshore to 9 Lakeshore to Conestoga Mall\",\n      \"Minutes\": 25,\n      \"ArrivalDateTime\": \"/Date(1453053000000)/\"\n    },\n    {\n      \"TripId\": \"131773063\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"9 Lakeshore to Conestoga Mall\",\n      \"Name\": \"9 - Lakeshore to 9 Lakeshore to Conestoga Mall\",\n      \"Minutes\": 70,\n      \"ArrivalDateTime\": \"/Date(1453055700000)/\"\n    },\n    {\n      \"TripId\": \"131773163\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"9 Lakeshore to Conestoga Mall\",\n      \"Name\": \"9 - Lakeshore to 9 Lakeshore to Conestoga Mall\",\n      \"Minutes\": 115,\n      \"ArrivalDateTime\": \"/Date(1453058400000)/\"\n    }\n  ]\n}",
+			"settings":
+			{
+				"buffer_size": 797,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -135,10 +160,50 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 127.0,
-		"last_filter": "gi push",
+		"height": 400.0,
+		"last_filter": "git",
 		"selected_items":
 		[
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"pre",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"gutter",
+				"GitGutter: Compare Against Branch"
+			],
 			[
 				"gi push",
 				"Git: Push"
@@ -152,24 +217,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"git",
-				"Git: Init"
-			],
-			[
-				"pretty",
-				"Pretty JSON: Format (Pretty Print) JSON"
-			],
-			[
 				"sftp syn",
 				"SFTP: Sync Both Directions…"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"package",
@@ -177,10 +226,6 @@
 			],
 			[
 				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"inst",
 				"Package Control: Install Package"
 			],
 			[
@@ -196,7 +241,7 @@
 				"Set Syntax: JSON"
 			]
 		],
-		"width": 467.0
+		"width": 475.0
 	},
 	"console":
 	{
@@ -217,10 +262,12 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/sammonga/Dropbox/Documents/Projects/InfoCenter"
+		"/Users/sammonga/Documents/InfoCenter"
 	],
 	"file_history":
 	[
+		"/Users/sammonga/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sammonga/Documents/InfoCenter/.gitignore",
 		"/D/Dropbox/Documents/Projects/InfoCenter/doc/sample.json",
 		"/C/Users/Sam/Downloads/GTFSDec2015/routes.txt",
 		"/C/Users/Sam/Downloads/GTFSDec2015/shapes.txt",
@@ -347,7 +394,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -361,6 +408,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"QtGui",
+			"vertLayout",
+			"stopTimes",
 			"Main",
 			"Columbia",
 			"was",
@@ -420,15 +470,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 758,
+						"buffer_size": 5564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								493,
-								493
+								515,
+								515
 							]
 						],
 						"settings":
@@ -446,7 +496,77 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								472,
+								479
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								291,
+								291
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -467,11 +587,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -483,7 +610,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 175.0
+		"height": 232.0
 	},
 	"output.find_results":
 	{
@@ -531,7 +658,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
