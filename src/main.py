@@ -10,11 +10,11 @@ import logging
 import pprint
 
 realTimeUrl = "http://realtimemap.grt.ca/Stop/GetStopInfo?stopId={stopID}&routeId={routeID}"
-busUpdateFreq = 60000
+busUpdateFreq = 30000
 weatherUpdateFreq = 120000
 
-schoolStop = '1123'   # 2514 for Columbia/Lester, 1123 for UW-DC (testing purposes)
-schoolBus = ['200','9']  # 7 for Columbia/Lester, [200, 9] for UW-DC (testing purposes)
+schoolStop = '2514'   # 2514 for Columbia/Lester, 1123 for UW-DC (testing purposes)
+schoolBus = ['7']  # 7 for Columbia/Lester, [200, 9] for UW-DC (testing purposes)
 schoolData = {}
 schoolTimes = []
 
@@ -145,6 +145,7 @@ class MainWindow(QMainWindow):
             fetchTimes()
             self.updateTable(self.schTable, schoolTimes)
             self.updateTable(self.gymTable, gymTimes)
+            print (downtownTimes)
             self.updateTable(self.dtnTable, downtownTimes)
             
             timeStr = time.strftime('%I:%M %p', time.localtime())
@@ -171,6 +172,14 @@ def clearTimes():
     global schoolData
     global gymData
     global downtownData
+
+    global schoolTimes
+    global gymTimes
+    global downtownTimes
+
+    schoolTimes = []
+    gymTimes = []
+    downtownTimes = []
 
     schoolData = {
         'status':'success',

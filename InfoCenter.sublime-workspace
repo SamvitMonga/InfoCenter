@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"QTable",
+				"QTableWidgetItem"
+			],
+			[
+				"statu",
+				"statusLabel"
+			],
+			[
+				"weather",
+				"weatherUpdateFreq"
+			],
+			[
 				"gym",
 				"gymTimes"
 			],
@@ -79,25 +91,8 @@
 			"file": "src/main.py",
 			"settings":
 			{
-				"buffer_size": 5564,
+				"buffer_size": 8071,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "{\n  \"status\": \"success\",\n  \"stopTimes\": [\n    {\n      \"TripId\": \"131762563\",\n      \"VehicleId\": \"21003\",\n      \"HeadSign\": \"200 iXpress Ainslie Terminal\",\n      \"Name\": \"200 - Ixpress to 200 iXpress Ainslie Terminal\",\n      \"Minutes\": 6,\n      \"ArrivalDateTime\": \"/Date(1453051900000)/\"\n    },\n    {\n      \"TripId\": \"131762663\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"200 iXpress Ainslie Terminal\",\n      \"Name\": \"200 - Ixpress to 200 iXpress Ainslie Terminal\",\n      \"Minutes\": 33,\n      \"ArrivalDateTime\": \"/Date(1453053480000)/\"\n    },\n    {\n      \"TripId\": \"131762763\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"200 iXpress Ainslie Terminal\",\n      \"Name\": \"200 - Ixpress to 200 iXpress Ainslie Terminal\",\n      \"Minutes\": 63,\n      \"ArrivalDateTime\": \"/Date(1453055280000)/\"\n    }\n  ]\n}",
-			"settings":
-			{
-				"buffer_size": 794,
-				"line_ending": "Unix",
-				"name": "{"
-			}
-		},
-		{
-			"contents": "{\n  \"status\": \"success\",\n  \"stopTimes\": [\n    {\n      \"TripId\": \"131772963\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"9 Lakeshore to Conestoga Mall\",\n      \"Name\": \"9 - Lakeshore to 9 Lakeshore to Conestoga Mall\",\n      \"Minutes\": 25,\n      \"ArrivalDateTime\": \"/Date(1453053000000)/\"\n    },\n    {\n      \"TripId\": \"131773063\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"9 Lakeshore to Conestoga Mall\",\n      \"Name\": \"9 - Lakeshore to 9 Lakeshore to Conestoga Mall\",\n      \"Minutes\": 70,\n      \"ArrivalDateTime\": \"/Date(1453055700000)/\"\n    },\n    {\n      \"TripId\": \"131773163\",\n      \"VehicleId\": \"\",\n      \"HeadSign\": \"9 Lakeshore to Conestoga Mall\",\n      \"Name\": \"9 - Lakeshore to 9 Lakeshore to Conestoga Mall\",\n      \"Minutes\": 115,\n      \"ArrivalDateTime\": \"/Date(1453058400000)/\"\n    }\n  ]\n}",
-			"settings":
-			{
-				"buffer_size": 797,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -161,9 +156,29 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "git",
+		"last_filter": "git ",
 		"selected_items":
 		[
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
 			[
 				"git",
 				"Git: Commit"
@@ -171,10 +186,6 @@
 			[
 				"git com",
 				"Git: Commit"
-			],
-			[
-				"git push",
-				"Git: Push"
 			],
 			[
 				"git stat",
@@ -408,6 +419,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"                                ",
+			"schTable",
+			"ctime",
+			"def",
 			"QtGui",
 			"vertLayout",
 			"stopTimes",
@@ -470,15 +485,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5564,
+						"buffer_size": 8071,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								515,
-								515
+								5609,
+								5609
 							]
 						],
 						"settings":
@@ -491,82 +506,12 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2341.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 794,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								472,
-								479
-							]
-						],
-						"settings":
-						{
-							"auto_name": "{",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 797,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								291,
-								291
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -587,18 +532,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -610,7 +548,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 232.0
+		"height": 198.0
 	},
 	"output.find_results":
 	{
@@ -618,7 +556,7 @@
 	},
 	"output.git":
 	{
-		"height": 318.0
+		"height": 162.0
 	},
 	"output.sftp":
 	{
@@ -658,7 +596,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
