@@ -1,20 +1,27 @@
+# -*- coding: utf-8 -*-
 import sys
-# import PyQt4
-from PyQt4.QtGui import *
-from PyQt4.QtCore import *
-import json
 import time
 import threading
-import urllib2
 import logging
-import pprint
 
-realTimeUrl = "http://realtimemap.grt.ca/Stop/GetStopInfo?stopId={stopID}&routeId={routeID}"
+from PyQt4.QtGui import *
+from PyQt4.QtCore import *
+
+import urllib2
+import json
+from pprint import pprint
+import forecastio
+
+
 busUpdateFreq = 30000
-weatherUpdateFreq = 120000
+realTimeUrl = "http://realtimemap.grt.ca/Stop/GetStopInfo?stopId={stopID}&routeId={routeID}"
 
-schoolStop = '2514'   # 2514 for Columbia/Lester, 1123 for UW-DC (testing purposes)
-schoolBus = ['7']  # 7 for Columbia/Lester, [200, 9] for UW-DC (testing purposes)
+weatherUpdateFreq = 120000
+with open('keys.json') as data_file:    
+    forecastKeys = json.load(data_file)
+
+schoolStop = '1123'   # 2514 for Columbia/Lester, 1123 for UW-DC (testing purposes)
+schoolBus = ['200', '9']  # 7 for Columbia/Lester, [200, 9] for UW-DC (testing purposes)
 schoolData = {}
 schoolTimes = []
 
@@ -39,18 +46,38 @@ class MainWindow(QMainWindow):
         self.updateWeather()
 
     def createWidgets(self):
-        bigFont = QFont("Calibri", 36, QFont.Bold)
+        bigFont = QFont("Calibri", 72, QFont.Bold)
         self.minFont = QFont("Calibri", 24)
         self.nameFont = QFont("Calibri", 24)
 
-        self.tempLabel = QLabel(time.ctime(), self)
-        self.tempLabel.setAlignment(Qt.AlignCenter)
-        self.tempLabel.resize(self.width(), 100)
-        self.tempLabel.setFont(bigFont)
+        topLayout = QHBoxLayout()
 
-        self.statusLabel = QLabel('Last Updated: {0}'.format(time.ctime()), self)
-        self.statusLabel.setAlignment(Qt.AlignRight)
-        self.statusLabel.resize(self.width(), 10)
+        self.timeLabel = QLabel(time.ctime(), self)
+        self.timeLabel.setAlignment(Qt.AlignCenter)
+        self.timeLabel.resize(self.width(), 100)
+        self.timeLabel.setFont(bigFont)
+
+        weatherLayout = QHBoxLayout()
+        tempLayout = QVBoxLayout()
+
+        self.wIconLabel = self.createImgLabel('Icon', '../res/wind.png')
+
+        self.tempLabel = QLabel('25'+ u"\u00B0", self)
+        self.tempLabel.setAlignment(Qt.AlignLeft)
+        self.tempLabel.resize(self.width(), 14)
+
+        self.tempTextLabel = QLabel('Clear for now', self)
+        self.tempTextLabel.setAlignment(Qt.AlignLeft)
+        self.tempTextLabel.resize(self.width(), 14)
+
+        tempLayout.addWidget(self.tempLabel)
+        tempLayout.addWidget(self.tempTextLabel)
+
+        weatherLayout.addWidget(self.wIconLabel)
+        weatherLayout.addLayout(tempLayout)
+
+        topLayout.addWidget(self.timeLabel)
+        topLayout.addLayout(weatherLayout)
 
         # Bus timing layout
         
@@ -89,14 +116,20 @@ class MainWindow(QMainWindow):
         # --------------------------------------------
 
         destLayout = QHBoxLayout()
+        destLayout.setSpacing(10)
         destLayout.addLayout(schBusLayout)
         destLayout.addLayout(gymBusLayout)
         destLayout.addLayout(dtnBusLayout)
 
+        # self.statusLabel = QLabel('Last Updated: {0}'.format(time.ctime()), self)
+        # self.statusLabel.setAlignment(Qt.AlignRight)
+        # self.statusLabel.resize(self.width(), 10)
+
         mainLayout = QVBoxLayout()
-        mainLayout.addWidget(self.tempLabel)
+        mainLayout.setSpacing(100)
+        mainLayout.addLayout(topLayout)
         mainLayout.addLayout(destLayout)
-        mainLayout.addWidget(self.statusLabel)
+        # mainLayout.addWidget(self.statusLabel)
 
         centralWidget = QWidget()
         centralWidget.setLayout(mainLayout)
@@ -145,11 +178,11 @@ class MainWindow(QMainWindow):
             fetchTimes()
             self.updateTable(self.schTable, schoolTimes)
             self.updateTable(self.gymTable, gymTimes)
-            print (downtownTimes)
+            # print (downtownTimes)
             self.updateTable(self.dtnTable, downtownTimes)
             
             timeStr = time.strftime('%I:%M %p', time.localtime())
-            self.statusLabel.setText('Last updated at {0}'.format(timeStr))
+            # self.statusLabel.setText('Last updated at {0}'.format(timeStr))
 
         finally:
             QTimer.singleShot(busUpdateFreq,self.updateBus)
@@ -158,7 +191,7 @@ class MainWindow(QMainWindow):
         try:
             logging.info('%s : Updating weather', time.ctime())
             timeStr = time.strftime('%I:%M %p', time.localtime())
-            self.tempLabel.setText(timeStr)
+            self.timeLabel.setText(timeStr)
             # fetchWeather()
         
         finally:
@@ -215,6 +248,8 @@ def fetchTimes():
             updated = True
             schoolData['stopTimes'].extend(recJson['stopTimes'])
             logging.info('Fetched times for bus # %s', bus)
+    
+    # TODO: SPLIT THE HEADSIGN TO GET ONLY BUS NUMBER
     
     buses = schoolData['stopTimes']
     for bus in buses:
