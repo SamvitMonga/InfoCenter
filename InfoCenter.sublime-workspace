@@ -87,14 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/main.py",
-			"settings":
-			{
-				"buffer_size": 8071,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -277,8 +269,11 @@
 	],
 	"file_history":
 	[
-		"/Users/sammonga/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sammonga/Documents/InfoCenter/src/test.py",
 		"/Users/sammonga/Documents/InfoCenter/.gitignore",
+		"/Users/sammonga/Documents/InfoCenter/src/keys.json",
+		"/Users/sammonga/Documents/InfoCenter/src/main.py",
+		"/Users/sammonga/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/D/Dropbox/Documents/Projects/InfoCenter/doc/sample.json",
 		"/C/Users/Sam/Downloads/GTFSDec2015/routes.txt",
 		"/C/Users/Sam/Downloads/GTFSDec2015/shapes.txt",
@@ -416,9 +411,14 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"HeadSign",
+			"Last Update",
+			"statusLabel",
+			"print",
+			"tempLabel",
 			"                                ",
 			"schTable",
 			"ctime",
@@ -460,7 +460,7 @@
 			"RenderDevice",
 			"phraseType"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
@@ -476,42 +476,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/main.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8071,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5609,
-								5609
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2341.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
